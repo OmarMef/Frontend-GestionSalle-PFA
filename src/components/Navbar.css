@@ -1,0 +1,73 @@
+
+.navbar {
+    display: grid;
+    grid-template-columns: 60px 1fr 160px;
+    align-items: center;
+    color: #ffffff;
+    height: 150px; /* navbar plus haute */
+    padding: 0 20px;
+  position: relative; /* reste en haut même au scroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999; /* très élevé pour passer au-dessus */
+  background-color: #16a34a; /* vert *//* ou ta couleur */
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.nav-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: 100px;      /* logo plus grand */
+  width: 400px;        /* garde les proportions */
+  object-fit: cover;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.username {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Sidebar */
+.sidebar {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  width: 220px;
+  background-color: #15803d; 
+  padding: 15px;
+  color: white;
+  border-right: 1px solid #14532d;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.sidebar li:hover {
+  background-color: #166534;
+}

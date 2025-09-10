@@ -1,0 +1,8 @@
+.mes-reservations-container h1 {
+  text-align: center;      /* Centre le texte */
+  margin-top: 40px;        /* Descend un peu le titre */
+  margin-bottom: 40px;     /* Ajoute de l’espace avec le tableau */
+  font-size: 28px;         /* Taille du texte */
+  font-weight: bold;       /* Met en gras */
+  color: #333;             /* Couleur élégante */
+}

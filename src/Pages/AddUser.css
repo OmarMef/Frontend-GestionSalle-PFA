@@ -1,0 +1,148 @@
+/* =======================
+   Container principal
+======================= */
+.ajouter-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f0f4ff, #e6f2ff);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  position: relative;
+}
+
+/* =======================
+   Bouton retour
+======================= */
+.back-link {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  background-color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.back-link:hover {
+  color: #007bff;
+  background-color: #f0f8ff;
+}
+
+/* =======================
+   Carte du formulaire
+======================= */
+.ajouter-card {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 480px;
+  animation: fadeIn 0.6s ease;
+}
+
+/* =======================
+   Titre
+======================= */
+.ajouter-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* =======================
+   Formulaire et Inputs
+======================= */
+.ajouter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.ajouter-form label {
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.ajouter-input {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.ajouter-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0,123,255,0.2);
+  outline: none;
+}
+
+/* =======================
+   Bouton Ajouter
+======================= */
+.ajouter-button {
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.ajouter-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+/* =======================
+   Message d'erreur ou succès
+======================= */
+.ajouter-message {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* =======================
+   Animation
+======================= */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* =======================
+   Responsive
+======================= */
+@media (max-width: 500px) {
+  .ajouter-card {
+    padding: 30px 20px;
+  }
+
+  .ajouter-title {
+    font-size: 24px;
+  }
+
+  .ajouter-button {
+    font-size: 16px;
+  }
+}

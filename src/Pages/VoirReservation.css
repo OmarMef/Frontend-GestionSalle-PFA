@@ -1,0 +1,144 @@
+/* Conteneur général */
+.reservations-container {
+  width: 90%;
+  margin: 50px auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Titre */
+.reservations-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #2c3e50;
+  letter-spacing: 1px;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+/* En-têtes */
+thead {
+  background-color: #4CAF50;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+thead th {
+  padding: 15px;
+  text-align: left;
+}
+
+/* Lignes */
+tbody tr {
+  border-bottom: 1px solid #ddd;
+  transition: background 0.3s;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #e0f7fa;
+}
+
+/* Cellules */
+tbody td {
+  padding: 12px 15px;
+}
+
+/* Message "Aucune réservation" */
+tbody tr td[colspan] {
+  text-align: center;
+  font-style: italic;
+  color: #777;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .reservations-container {
+    width: 95%;
+  }
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  thead tr {
+    display: none;
+  }
+  tbody tr {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+    padding: 15px;
+  }
+  tbody td {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+  }
+  tbody td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #555;
+  }
+}
+/* Styles des icônes */
+.icon {
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: transform 0.2s;
+}
+
+/* Séparation entre les icônes */
+.icon + .icon {
+  margin-left: 50px; /* espace entre les icônes */
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.icon.edit {
+  color: #3498db; /* bleu pour édition */
+}
+
+.icon.delete {
+  color: #e74c3c; /* rouge pour suppression */
+}
+.voirReservation-back-button{
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  z-index: 1000;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+
+.voirReservation-back-button a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.voirReservation-back-button a:hover {
+  color: #007bff;
+}
+
