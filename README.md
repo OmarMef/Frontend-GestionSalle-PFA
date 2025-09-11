@@ -6,7 +6,7 @@
 ## Login Page
 ![Login](Captures/login.png)
 ## Home Page
-![Home](Captures/Home.png)
+![Home](Captures/home.png)
 ## Dashboard
 ![Dashboard](Captures/dashbord.png)
 ## Gestion des reservation
